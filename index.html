@@ -4,82 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pablo Benavides – Data Science Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1, h2 {
-      color: #2c3e50;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
     }
     a {
-      color: #2980b9;
+      color: #64b5f6;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-    .project {
-      margin-bottom: 2rem;
-    }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding-top: 3rem;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border: none;
+    }
+    .card-title {
+      color: #ffffff;
+    }
+    .section-title {
+      border-bottom: 1px solid #444;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hello, I'm Pablo Benavides</h1>
+  <div class="container text-center">
+    <img src="https://avatars.githubusercontent.com/u/your-profile-pic" alt="Profile Photo" class="profile-img">
+    <h1 class="mt-3">Hello, I'm Pablo Benavides</h1>
+    <p class="lead">Master's student in Data Science at Universidad de Navarra</p>
     <p>
-      I am a Master's student in Data Science at Universidad de Navarra, with a strong interest in 
-      <strong>machine learning</strong>, <strong>data analysis</strong>, and <strong>digital transformation</strong>.
-      I recently completed an eight-month internship at KPMG, where I gained hands-on experience and exposure to data-driven projects in a professional consulting environment.
-      <br><br>
-      I have lived and studied in Spain, England, the Netherlands, and Ireland — experiences that have shaped my global perspective and adaptability. 
-      Although currently based in Spain, I am actively looking for opportunities abroad.
+      I am passionate about <strong>machine learning</strong>, <strong>data analysis</strong>, and <strong>digital transformation</strong>.
+      I recently completed an internship at KPMG where I gained valuable experience in data consulting.
+      I have lived in Spain, England, the Netherlands, and Ireland, and am open to relocating for new opportunities.
     </p>
 
-    <h2>📂 Recent Projects</h2>
+    <div class="text-start mt-5">
+      <h2 class="section-title">📂 Recent Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3 h-100">
+            <div class="card-body">
+              <h5 class="card-title">🌎 Airline Passenger Satisfaction Prediction</h5>
+              <p class="card-text">A supervised classification project predicting customer satisfaction based on flight experience data.</p>
+              <a href="https://github.com/mrpobs/mrpobs.github.io/tree/main/Airline%20Passenger%20Satisfaction%20Prediction_Bachelor's%20Thesis" target="_blank">View project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 h-100">
+            <div class="card-body">
+              <h5 class="card-title">📧 Enron Email Analysis</h5>
+              <p class="card-text">NLP and unsupervised learning techniques applied to the Enron email dataset to extract insights.</p>
+              <a href="https://github.com/mrpobs/mrpobs.github.io/tree/main/Enron%20Email%20Analysis%20%E2%80%93%20Final%20Machine%20Learning%20Project" target="_blank">View project</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="project">
-      <h3>✈️ Airline Passenger Satisfaction Prediction</h3>
-      <p>A supervised classification project that predicts customer satisfaction using flight-related experience data.</p>
-      <a href="https://github.com/mrpobs/mrpobs.github.io/tree/main/Airline%20Passenger%20Satisfaction%20Prediction_Bachelor's%20Thesis" target="_blank">View project</a>
+      <h2 class="section-title mt-5">🛠️ Tools & Technologies</h2>
+      <p>Office 365, Python (Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib), SQL, R, Tableau, Power BI, AWS, Git, Jupyter, HTML</p>
+
+      <h2 class="section-title mt-4">🌍 Languages</h2>
+      <ul>
+        <li>Spanish – Native</li>
+        <li>English – Certified C1</li>
+        <li>French – Mother tongue (spoken only)</li>
+      </ul>
+
+      <h2 class="section-title mt-4">📧 Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:pabolbenavides@gmail.com">pabolbenavides@gmail.com</a></li>
+        <li>Phone: +34 638 58 29 50</li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/pablo-benavides-46686013a" target="_blank">Pablo Benavides</a></li>
+        <li>GitHub: <a href="https://github.com/mrpobs" target="_blank">github.com/mrpobs</a></li>
+      </ul>
     </div>
-
-    <div class="project">
-      <h3>📧 Enron Email Analysis</h3>
-      <p>Applied NLP and unsupervised learning techniques (clustering, topic modeling) to explore insights in the Enron email dataset.</p>
-      <a href="https://github.com/mrpobs/mrpobs.github.io/tree/main/Enron%20Email%20Analysis%20%E2%80%93%20Final%20Machine%20Learning%20Project" target="_blank">View project</a>
-    </div>
-
-    <h2>🛠️ Tools & Technologies</h2>
-    <p>
-      Office 365, Python (Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib), SQL, R, Tableau, Power BI, AWS, Git, Jupyter, HTML
-    </p>
-
-    <h2>🌍 Languages</h2>
-    <ul>
-      <li>Spanish – Native</li>
-      <li>English – Certified C1</li>
-      <li>French – Mother tongue (spoken only)</li>
-    </ul>
-
-    <h2>📫 Contact</h2>
-    <ul>
-      <li>Email: <a href="mailto:pabolbenavides@gmail.com">pabolbenavides@gmail.com</a></li>
-      <li>Phone: +34 638 58 29 50</li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/pablo-benavides-46686013a" target="_blank">Pablo Benavides</a></li>
-      <li>GitHub: <a href="https://github.com/mrpobs" target="_blank">github.com/mrpobs</a></li>
-    </ul>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
